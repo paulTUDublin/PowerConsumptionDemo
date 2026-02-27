@@ -20,9 +20,9 @@ int main()
     while(1)
     {        
         // Uncomment during Run and LPRun demonstrations 
-        // GPIOB->ODR &= ~(1 << 3);
-        // GPIOA->ODR ^= (1 << 0);
-        // delay(1000000);
+        GPIOB->ODR &= ~(1 << 3);
+        GPIOA->ODR ^= (1 << 0);
+        delay(1000000);
         
         // Uncomment for Sleep and LPSleep
         // GPIOB->ODR &= ~(1 << 3);
@@ -32,11 +32,11 @@ int main()
         // delay(1000000);
 
         // Uncomment for Stop Mode 0
-        GPIOB->ODR &= ~(1 << 3);
-        GPIOA->ODR ^= (1 << 0);
-        enterStopMode0(); 
-        GPIOA->ODR ^= (1 << 0);
-        delay(100000);
+        // GPIOB->ODR &= ~(1 << 3);
+        // GPIOA->ODR ^= (1 << 0);
+        // enterStopMode0(); 
+        // GPIOA->ODR ^= (1 << 0);
+        // delay(100000);
 
             
     }
